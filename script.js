@@ -32,7 +32,7 @@ function adaptWebsite(mode) {
 };
 
 if (window.navigator.userAgentData.mobile) {
-    toggleBall.addEventListener("touchstart", () => {
+    toggle.addEventListener("touchstart", () => {
         toggleBall.classList.toggle("slide-right-and-activate-darkmode");
         if (toggleBall.classList.contains("slide-right-and-activate-darkmode")) {
             toggleBall.style.transform = `translateX(${translateToggleBallValue*-1}%)`;
